@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.cityContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32%;
+    border-top: 30px rgb(23, 144, 184) solid;
+}
+.placeContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32%;
+    border-top: 30px rgb(228, 228, 227) solid;
+}
+.celebrityContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32%;
+    border-top: 30px rgb(92, 156, 113) solid;
+}
+
+.infoBox, .textBox {
+    display: flex;
+}
+
+.img {
+    display: flex;
+    /* width: 100%; */
+    max-width: 250px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.cityCard {
+    display: flex;
+    background-color: rgb(23, 144, 184);
+    /* background-color: rgb(228, 219, 210); */
+    
+}
+.placeCard {
+    display: flex;
+    background-color: rgb(228, 228, 227);
+    /* background-color: rgb(228, 219, 210); */
+    
+}
+.celebrityCard {
+    display: flex;
+    background-color: rgb(92, 156, 113);
+    /* background-color: rgb(228, 219, 210); */
+    
+}
+
+.text {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+h2 {
+    margin: 2px;
+}
+footer {
+    display: flex;
+    background: lightgray;
+    height: 5em;
+    margin-top: 50px;
+    padding: 10px;
+    flex-direction: column-reverse;
+}
