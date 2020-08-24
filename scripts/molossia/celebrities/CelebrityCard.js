@@ -1,17 +1,14 @@
-export const Fish = (fishObj) => {
-	// console.log("what is the fishObj", fishObj);
-	return `
-		<div class="fishList-card">
-			<div class="card-image">
-				<img class="fish-image" src="images/${fishObj.image}" alt="${fishObj.species}">
-			</div>
-			<ul>
-				<li>Given Name: ${fishObj.givenName}</li>
-				<li>Species: ${fishObj.species}</li>
-				<li>Length: ${fishObj.length}</li>
-				<li>Diet: ${fishObj.diet}</li>
-				<li>Harvest Location: ${fishObj.harvestLocation}</li>
-			</ul>
-		</div>
-	`
+
+export const CelebCard = (celebObj) => {
+    return `
+    <div class="cont-card">
+        <div class="card-imgBox">
+            <img src="/images/ireland/${celebObj.img}" alt="${celebObj.name}" class="card-img">
+        </div>
+        <div class="card-infoBox">
+            <h3>${celebObj.name}</h3>
+            <p>"${celebObj.info}"</p>
+        </div>
+    </div>
+    `
 }
