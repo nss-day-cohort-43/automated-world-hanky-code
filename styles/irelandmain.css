@@ -1,0 +1,90 @@
+/* ----------------------- Main Content -------------------------- */
+
+.mainContainer{
+    /* border: black dotted 1px; */
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.container {
+    border-top: 10px darkgreen solid;
+    /* border: green dotted 5px; */
+    margin: 2%;
+    flex: 1 1 33%;
+}
+
+.cont-card {
+    display: flex;
+}
+
+.cont-title {
+    color: black;
+}
+
+.card-infoBox h3 {
+    color: rgb(90, 90, 90);
+    /* border: goldenrod dotted 1px;  */
+}
+
+.card-infoBox p {
+    /* border: goldenrod dotted 1px;  */
+    color: grey;
+    font-family: 'Cabin', sans-serif;
+    font-weight: lighter;
+} 
+
+.card-imgBox {
+    /* display: flex; */
+    background-color: bisque;
+    width: 250px;
+    height: 166px;
+    margin: 10px;
+}
+
+.card-img {
+    /* flex: 1 1 25%; */
+    width: inherit;
+    height: inherit;
+}
+/* --------------------------------------------------------------- */
+
+/* -------------------- Medium width window --------------------- */
+@media (max-width: 1300px){
+    .cont-card {
+        display: block;
+    }
+}
+
+/* -------------------- Small width window --------------------- */
+@media (max-width: 975px){
+    .mainContainer{
+        /* border: black dotted 20px; */
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .container {
+        /* border: green dotted 5px; */
+        margin: 20px;
+        /* justify-content: space-evenly; */
+        flex: 1 1 33%;
+    }
+
+    .cont-title {
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: lighter;
+        color: black;
+    }
+
+    .cont-card {
+        display: flex;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-left: 20px
+    }
+}

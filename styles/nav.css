@@ -1,0 +1,79 @@
+/* ------------------ Logo and Navigation bar ------------------ */
+.logo {
+  float: left;
+  padding: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  border-radius: white 10px;
+}
+
+.logo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background: linear-gradient(180deg,rgba(0,0,0,0.5),transparent); /* that nice transparent gradient nav bar */
+}
+
+nav ul li {
+  display: inline-flex; /* lets all nav items show on the same line and be flexy */
+}
+
+nav ul li a {
+  align-content: flex-end;
+  color: rgba(220, 220, 220, 0.694);
+  font-size: 35px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* styling for nav items when hovering over them */
+nav ul li a:hover:not(.active) {
+  text-decoration: underline;
+  color: white;
+}
+
+/* styling for the currently selected window in the nav bar*/
+.active {
+  font-size: 38px;
+  color: white;
+}
+/* ------------------------------------------------------------- */
+
+/* ---------------------- Small window width ------------------- */
+@media (max-width: 975px){
+  .logo img {
+      display: block;
+      width: 80px;
+      height: 80px;
+  }
+
+  nav ul li a {
+      align-content: flex-end;
+      color: rgba(220, 220, 220, 0.694);
+      font-size: 26px;
+      font-weight: lighter;
+      text-align: center;
+      padding: 14px 10px;
+      margin-top: 20px;
+      text-decoration: none;
+  }
+
+  .active {
+      font-size: 30px;
+      color: white;
+  }
+}

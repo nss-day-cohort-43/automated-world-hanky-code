@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------- Main Header ------------------------- */
+.hero {
+    display: flex;
+}
+
+header {
+    display: flex;
+    clear: both;
+    font-weight: bold;
+    flex: 2 1 100%;
+    color: white;  
+}
+
+h1 {
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 1vh;
+    font-size: 3em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.country-img {
+    display: flex;
+    flex: 0.25 2 120%; 
+    height: 32em;
+    margin-top: -130px;
+    margin-left: -80px; 
+    background-position: 50%; /* ---- How to properly center a background image */
+}
+
+.shadow-box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0,0,0,0.3),transparent); /* to darken the lower half of the background image */
+}
+
+.country-name {
+    flex-basis: 100%;
+    flex-shrink: 1;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 100px;
+    margin-top: auto;  /* auto center content vertically */
+    margin-bottom: auto; /* auto center content vertically */
+}
+/* --------------------------------------------------------------- */
+
+/* ---------------------------- Footer --------------------------- */
+footer {
+    display: flex;
+    background: lightgray;
+    height: 10em;
+    margin-top: 50px;
+    flex-direction: column-reverse;
+}
+
+.footer-text {
+    text-align: center;
+    padding-bottom: 10px;
+}
+/* --------------------------------------------------------------- */
+
+/* -------------------- Medium window width --------------------- */
+@media (max-width: 1300px){
+
+    .country-img {
+        display: flex;
+        flex: 2 2 100%;
+        height: 40em;
+        margin-top: -100px;
+        margin-left: -80px;
+        justify-content: center;
+    }
+}
+
+/* --------------------- Small window width ---------------- */
+@media (max-width: 975px){
+    .country-img {
+        display: flex;
+        flex: 2 2 100%;
+        height: 30em;
+        margin: -10px;
+        justify-content: center;
+    }
+
+    .country-name {
+        flex-basis: 100%;
+        color: white;
+        text-align: center;
+        width: auto;
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-family: 'Cabin', sans-serif;
+    }
+}
