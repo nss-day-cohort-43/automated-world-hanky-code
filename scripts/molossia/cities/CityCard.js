@@ -2,9 +2,9 @@
 
 export const CityCard = (cityObj) => {
     return `
-    <div class="cont-card">
+    <div class="city-cont-card">
         <div class="card-imgBox">
-            <img src="/images/molossia/${cityObj.img}" alt="${cityObj.name}" class="card-img">
+            <img src="/images/molossiaImages/${cityObj.img}" alt="${cityObj.name}" class="card-img">
         </div>
         <div class="card-infoBox">
             <h3>${cityObj.name}</h3>

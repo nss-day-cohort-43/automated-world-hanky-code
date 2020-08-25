@@ -1,19 +1,27 @@
 // Array of city objects 
-const celebrityCollection = [
+const cityCollection = [
     {
-        img: "liam-neeson2.jpeg",
-        name: "Liam neeson",
-        info: "I will look for you, I will find you and I will kill you."
+        img: "0harmonyProvince.jpg",
+        name: "Harmony Provence",
+        info: "The Primary place of residence for the presidential family."
 
     },
     {
-        img: "graham-norton2.jpeg",
-        name: "Graham Norton",
-        info: "Host of the <i>Graham Norton Show</i> on BBC."
+        img: "0farfalla.jpg",
+        name: "Farfalla",
+        info: "Home to a flagpole and an excellent example of the raw and powerful infrastructure of the Republic of Molossia in the form of a small (10ftx1.5ft) bridge made out of 2x4s."
 
-    }
+    },
+    {
+        img: "0desertHomestead.jpg",
+        name: "Desert Homestead",
+        info: "This land, found within California, is home to the national Molossian monument dedicated to his excellency's late grandfather."
+
+    },
+   
+
 ]
 
-export const useCelebData = () => {
-    return celebrityCollection.slice() // slice() returns a copy of the array
+export const useCityData = () => {
+    return cityCollection.slice() // slice() returns a copy of the array
 }

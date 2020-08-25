@@ -1,24 +1,14 @@
 
-import { useCelebData } from "./CelebrityDataProvider.js";
-import { CelebCard } from "./CelebrityCard.js";
-
-
-export const CelebCardList = () => {
-
-    // targets the element holding the list of cards
-    const contentElement = document.querySelector(".celebrities");
-
-    const celebList = useCelebData();
-
-
-    let celebHTMLRepresentation = "";
-    for (const celeb of celebList) {
-        celebHTMLRepresentation += CelebCard(celeb);
-    }
-
-    // Add to the existing HTML in the content element
-    contentElement.innerHTML += `
-        ${celebHTMLRepresentation}
+export const LandmarkCard = (landObj) => {
+    return `
+    <div class="cont-card">
+        <div class="card-imgBox">
+            <img src="/images/molossiaImages/${landObj.img}" alt="${landObj.name}" class="card-img">
+        </div>
+        <div class="card-infoBox">
+            <h3>${landObj.name}</h3>
+            <p>${landObj.info}</p>
+        </div>
+    </div> 
     `
-
 }

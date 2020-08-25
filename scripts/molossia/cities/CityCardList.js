@@ -1,24 +1,24 @@
 
-import { useCelebData } from "./CelebrityDataProvider.js";
-import { CelebCard } from "./CelebrityCard.js";
+import { useCityData } from "./CityDataProvider.js";
+import { CityCard } from "./CityCard.js";
 
 
-export const CelebCardList = () => {
+export const CityList = () => {
 
     // targets the element holding the list of cards
-    const contentElement = document.querySelector(".celebrities");
+    const contentElement = document.querySelector(".cities");
 
-    const celebList = useCelebData();
+    const cityList = useCityData();
 
 
-    let celebHTMLRepresentation = "";
-    for (const celeb of celebList) {
-        celebHTMLRepresentation += CelebCard(celeb);
+    let cityHTMLRepresentation = "";
+    for (const city of cityList) {
+        cityHTMLRepresentation += CityCard(city);
     }
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
-        ${celebHTMLRepresentation}
+        ${cityHTMLRepresentation}
     `
 
 }

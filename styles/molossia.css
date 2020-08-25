@@ -11,13 +11,17 @@ body {
     justify-content: space-around;
    
 }
-.cityContainer {
+
+/* .cityContainer  */
+.city-cont-card{
     display: flex;
     flex-direction: column;
     flex-basis: 32%;
     border-top: 30px rgb(23, 144, 184) solid;
 }
-.placeContainer {
+
+/* .placeContainer  */
+.place-cont-card {
     display: flex;
     flex-direction: column;
     flex-basis: 32%;
@@ -32,7 +36,7 @@ body {
     border-top: 30px rgb(92, 156, 113) solid;
 }
 
-.card-infoBox,{
+.card-infoBox {
     display: flex;
 }
 

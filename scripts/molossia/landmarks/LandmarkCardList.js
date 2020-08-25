@@ -1,24 +1,23 @@
 
-import { useCelebData } from "./CelebrityDataProvider.js";
-import { CelebCard } from "./CelebrityCard.js";
+import { useLandmarkData } from "./LandmarkDataProvider.js";
+import { LandmarkCard } from "./LandmarkCard.js";
 
 
-export const CelebCardList = () => {
+export const LandmarkList = () => {
 
     // targets the element holding the list of cards
-    const contentElement = document.querySelector(".celebrities");
+    const contentElement = document.querySelector(".landmarks");
 
-    const celebList = useCelebData();
+    const landList = useLandmarkData();
 
 
-    let celebHTMLRepresentation = "";
-    for (const celeb of celebList) {
-        celebHTMLRepresentation += CelebCard(celeb);
+    let landmarkHTMLRep = "";
+    for (const lm of landList) {
+        landmarkHTMLRep += LandmarkCard(lm);
     }
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
-        ${celebHTMLRepresentation}
+        ${landmarkHTMLRep}
     `
-
 }
