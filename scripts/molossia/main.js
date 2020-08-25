@@ -1,17 +1,6 @@
-console.log("You are terrific");
-import { useFish, makeMostHolyFish, makeSoldierFish, makeUnworthy } from './FishDataProvider.js';
-import { FishList } from './FishList.js';
+import { CelebCardList } from "./celebrities/CelebrityCardList.js";
 
 
-// const allTheFish = useFish();
-// console.log("all the fish", allTheFish);
+console.log("Loading main.js");
 
-// for (const taco of allTheFish) {
-//     console.log("the item is", taco);
-// }
-
-FishList();
-
-// makeMostHolyFish();
-// makeSoldierFish();
-// makeUnworthy();
+CelebCardList();
