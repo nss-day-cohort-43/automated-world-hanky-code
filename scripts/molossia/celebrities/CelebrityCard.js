@@ -2,7 +2,7 @@
 
 export const CelebCard = (celebObj) => {
     return `
-    <div class="cont-card">
+    <div class="celeb-cont-card">
         <div class="card-imgBox">
             <img src="/images/molossiaImages/${celebObj.img}" alt="${celebObj.name}" class="card-img">
         </div>

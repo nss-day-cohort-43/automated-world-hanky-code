@@ -15,7 +15,7 @@ const celebrityCollection = [
     {
         img: "0JamesDoohan.jpg",
         name: "James Doohan",
-        info: "The heroic nine fingered cheif engineer aboard the USS Enterprise, on shoreleave in Molossia"
+        info: "The heroic nine fingered chief engineer aboard the USS Enterprise, on shoreleave in Molossia"
 
     }
 ]

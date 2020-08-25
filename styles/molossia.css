@@ -23,18 +23,20 @@ body {
     flex-basis: 32%;
     border-top: 30px rgb(228, 228, 227) solid;
 }
-.celebrityContainer {
+
+/* celebrityContainer */
+.celeb-cont-card {
     display: flex;
     flex-direction: column;
     flex-basis: 32%;
     border-top: 30px rgb(92, 156, 113) solid;
 }
 
-.infoBox, .textBox {
+.card-infoBox,{
     display: flex;
 }
 
-.img {
+.card-img {
     display: flex;
     /* width: 100%; */
     max-width: 250px;
@@ -43,19 +45,21 @@ body {
     padding: 5px;
 }
 
-.cityCard {
+.city-cont-card {
     display: flex;
     background-color: rgb(23, 144, 184);
     /* background-color: rgb(228, 219, 210); */
     
 }
-.placeCard {
+
+/* .placeCard  */
+.place-cont-card{
     display: flex;
     background-color: rgb(228, 228, 227);
     /* background-color: rgb(228, 219, 210); */
     
 }
-.celebrityCard {
+.celeb-cont-card {
     display: flex;
     background-color: rgb(92, 156, 113);
     /* background-color: rgb(228, 219, 210); */
@@ -70,6 +74,11 @@ body {
 h2 {
     margin: 2px;
 }
+h3 {
+    padding: 5px;
+    
+}
+
 footer {
     display: flex;
     background: lightgray;
