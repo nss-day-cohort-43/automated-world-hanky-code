@@ -1,6 +1,6 @@
 
 
-// Array of city objects 
+// Array of celebrity objects 
 const celebrityCollection = [
     {
         img: "liam-neeson2.jpeg",

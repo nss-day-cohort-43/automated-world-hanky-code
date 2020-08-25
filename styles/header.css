@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+
+    /* -- prevents user from scrolling sideways if any part of the page overflows the width */
+    overflow-x: hidden; 
+    overflow-y: scroll; 
 }
 
 /* ----------------------- Main Header ------------------------- */
@@ -19,7 +23,8 @@ header {
 h1 {
     color: white;
     font-family: 'Cabin', sans-serif;
-    letter-spacing: 1vh;
+    font-weight: lighter;
+    letter-spacing: 5px;
     font-size: 3em;
     margin-top: auto;
     margin-bottom: auto;
