@@ -1,81 +1,51 @@
-.hero {
-    display: flex;
-}
 
-header {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    /* background-color: blueviolet; */
-    flex: 2 1 100%;
-    color: white;
-}
 
 body {
-    color: rgb(209, 214, 214);
+    color: bisque;
+    background-color: rgb(5, 7, 10);
 }
 
-h1 {
-    color: #7dceb0;
-    letter-spacing: 1vh;
-    font-size: 4em;
-    /* text-shadow: 4px 5px rgba(0, 0, 0, 0.56); */
-    justify-content: right;
-}
-
-.country-img {
-    display: flex;
-    flex: 0.25 2 120%;
-    height: 400px;
-    margin-top: -150px;
-    margin-left: -80px;
-    justify-content: right;
-}
-
-.country-img img {
-    padding-bottom: 300px;
-}
-
-.country-name {
-    flex-basis: 100%;
-    flex-shrink: 1;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    width: auto;
-    /* padding-top: 100px; */
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
 .mainContainer {
     /* border: black dotted 1px; */
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 0 0;
+
     justify-content: space-between;
     background-color: rgb(5, 7, 10);
 }
 
 .container {
-    border-right: white solid 20px;
+    border-right: bisque solid 20px;
+    padding-right: 10px;
     /* border: green dotted 5px; */
-    margin: 2%;
+    margin: 20px;
     /* justify-content: space-evenly; */
     flex: 1 1 33%;
     background-color: rgb(5, 7, 10);
-    mar
 }
 
 .cont-card {
-    display: block;
+    display: flex;
 }
+
+.card-infoBox h3 {
+    margin-bottom: 5px;
+    /* border: goldenrod dotted 1px;  */
+}
+
+.card-infoBox p {
+    /* border: goldenrod dotted 1px;  */
+    font-family: 'Cabin', sans-serif;
+    font-weight: lighter;
+    margin-top: 5px;
+} 
 
 .card-imgBox {
     /* display: flex; */
     background-color: bisque;
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 166px;
     margin: 10px;
 }
 
@@ -84,103 +54,56 @@ h1 {
     width: inherit;
     height: inherit;
 }
-
 footer {
     display: flex;
-    background: rgb(5, 7, 10);
+    background-color: rgb(5, 7, 10);
+    color: black;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1400px) {
+    /* --------- rearrange screen when window is medium width ---------- */
+    .cont-card {
+        display: block;
+    }
+
+    .card-infoBox h3 {
+        margin-top: 10px;
+        /* border: goldenrod dotted 1px;  */
+    }
+}
+
+@media (max-width: 1020px) {
+    /* --------- rearrange screen when window is small ---------- */
+
+    .mainContainer {
+        /* border: black dotted 20px; */
+        /* display: flex; */
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .container {
+        border-width: 50px;
+        margin-right: 5%;
+    }
+
+    .cont-title {
+        text-align: center;
+    }
+
     .cont-card {
         display: flex;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-left: 20px
     }
-}
 
-@media (max-width: 975px) {
-    /* --------- rearrange screen when window is small ---------- */
-    h1 {
-        font-size: 3em;
+    .card-infoBox {
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    .country-img {
-        display: flex;
-        /* background-size: cover; */
-        flex: 2 2 100%;
-        height: 30em;
-        margin-top: -130px;
-        margin-left: -100px;
-        justify-content: center;
-        /* align-content: center; */
-        /* margin-top: -100px; */
-    }
-    /* .country-name {
-        flex-basis: 50%;
-        border: red dotted 2px;
-        color: white;
-        text-align: center;
-        width: auto;
-        /* flex-shrink: 0; */
-    /* padding-top: 100px; */
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-*/ .mainContainer {
-    /* border: black dotted 20px; */
-    /* display: flex; */
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.cont-title {
-    text-align: left;
-}
-
-.cont-card {
-    display: flex;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-left: 20px
-}
-
-
-/* Add a black background color to the top navigation */
-
-.topnav {
-    background-color: rgb(5, 7, 10);
-    overflow: hidden;
-}
-
-
-/* Style the links inside the navigation bar */
-
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    align-self: center;
-}
-
-
-/* Change the color of links on hover */
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-/* Add a color to the active/current link */
-
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-nav {
-    align-content: center;
 }

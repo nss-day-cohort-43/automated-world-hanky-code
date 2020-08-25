@@ -5,7 +5,7 @@ export const CityCard = (cityObj) => {
             <img src="/images/turkeyImages/${cityObj.img}" alt="${cityObj.name}" class="card-img">
         </div>
         <div class="card-infoBox">
-            <h2>${cityObj.name}</h2>
+            <h3>${cityObj.name}</h3>
             <p>${cityObj.description} </p>
         </div>
     </div>
