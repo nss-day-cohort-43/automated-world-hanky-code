@@ -13,3 +13,6 @@ export const CelebCard = (celebObj) => {
     </div>
     `
 }
+
+
+

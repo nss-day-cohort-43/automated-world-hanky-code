@@ -7,7 +7,7 @@ const celebrityCollection = [
 
     },
     {
-        img: "0jackblackmeet.jpg",
+        img: "0jackblackmeet.jpg",a
         name: "Jack Black",
         info: "Famous funnyguy, rock enthusiast, and all around great dad, Jack Black"
 
