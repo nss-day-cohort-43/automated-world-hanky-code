@@ -56,8 +56,10 @@ body {
 }
 footer {
     display: flex;
-    background: rgb(5, 7, 10);
+    background-color: rgb(5, 7, 10);
+    color: black;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1400px) {
