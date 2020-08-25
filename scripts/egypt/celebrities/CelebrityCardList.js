@@ -11,5 +11,5 @@ export const CelebCardList = (aCelebArr) => {
     for(const celebObj of celebListArr) {
         celebCardHTMLRep += CelebCard(celebObj)
     }
-    contentElement.innerHTML += celebCardHTMLRep;
+    contentElement.innerHTML += `${celebCardHTMLRep}`;
 }
